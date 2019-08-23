@@ -1,0 +1,15 @@
+<h1>
+    Login Form
+</h1>
+<b>
+    Enter username : <input type="text" [(ngModel)]="username">
+</b>
+<hr>
+<b>
+    Enter password : <input type="text" [(ngModel)]="pwd">
+</b>
+<button #log (click)="Login(log,imgStatus)" >
+    <label >login</label>
+</button>
+<span class=".login">{{loginStatus}}</span>
+<img #imgStatus src=""/>
