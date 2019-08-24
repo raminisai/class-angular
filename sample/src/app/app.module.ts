@@ -6,14 +6,20 @@ import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { FirstComponent } from './first/first.component';
 import { LoginComponent } from './login/login.component';
-import { RegistrationComponent } from './registration/registration.component'
+import { RegistrationComponent } from './registration/registration.component';
+import { SwitchComponent } from './switch/switch.component';
+import { BuiltInPipeComponent } from './built-in-pipe/built-in-pipe.component';
+import { ReversePipe } from './reverse.pipe'
  
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
     LoginComponent,
-    RegistrationComponent
+    RegistrationComponent,
+    SwitchComponent,
+    BuiltInPipeComponent,
+    ReversePipe
   ],
   imports: [
     BrowserModule,

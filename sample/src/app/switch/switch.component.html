@@ -1,0 +1,18 @@
+Enter value for num1 :<input type="number" [(ngModel)]="num1">
+Enter value for num2 :<input type="number" [(ngModel)]="num2">
+<button class="btn" (click)="currentOperator = 'firstapp'">FirstApp</button>
+<button class="btn" (click)="currentOperator = 'login'">Login</button>
+<button class="btn" (click)="currentOperator = 'registration'">Registration</button>
+
+
+<div [ngSwitch]="currentOperator">
+    <div *ngSwitchCase="'firstapp'">
+        <app-first></app-first>
+    </div>
+    <div *ngSwitchCase="'login'">
+        <app-login></app-login>
+    </div>
+    <div *ngSwitchCase="'registration'">
+        <app-registration></app-registration>
+    </div>
+</div>
